@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<datatest>
+	<data id="1">
+		<question>vtv1 đang chiếu gì</question>
+		<domain>tv</domain>
+		<intent>tv_ttl</intent>
+		<channel>vtv1</channel>
+	</data>
+	<data id="2">
+		<question>hôm nay rạp quốc gia chiếu phim gì</question>
+		<domain>movie</domain>
+		<intent>mov_title</intent>
+		<cinname>TT Chiếu Phim Quốc Gia</cinname>
+		
+	</data>
+</datatest>
