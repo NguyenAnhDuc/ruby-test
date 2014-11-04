@@ -1,9 +1,16 @@
 
+
 public class NameMapper {
 	private String mv_cinName;
 	private String tv_channel;
 	private String tv_program;
 	private String mv_movieTitle;
+	public NameMapper(){
+		mv_cinName = "";
+		tv_channel = "";
+		tv_program = "";
+		mv_movieTitle = "";
+	}
 	public String getMv_cinName() {
 		return mv_cinName;
 	}

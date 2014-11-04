@@ -17,14 +17,14 @@ public class TestService {
 			given().contentType("application/x-www-form-urlencoded;charset=UTF-8").
 			param("question", dataTest.getQuestion()).
 		when().
-			post("http://ruby.fti.pagekite.me/rubyweb/getAnswer").
+			post("http://localhost:8080/rubyweb/getAnswer").
 		then().
 			assertThat().body("domain", equalTo(dataTest.getDomain())).
 			assertThat().body("intent", equalTo(dataTest.getIntent())).
-			assertThat().body("queryParamater.cinName", anyOf( is(nullValue()) , equalTo(dataTest.getNameMapper().getMv_cinName()))).
-			assertThat().body("queryParamater.tvChannel", anyOf( is(nullValue()) , equalTo(dataTest.getNameMapper().getTv_channel()))).
-			assertThat().body("queryParamater.tvProTitle", anyOf( is(nullValue()) , equalTo(dataTest.getNameMapper().getTv_program()))).
-			assertThat().body("queryParamater.movieTitle", anyOf( is(nullValue()) , equalTo(dataTest.getNameMapper().getMv_movieTitle())));
+			assertThat().body("queryParamater.cinName", anyOf( is(nullValue()) , equalToIgnoringCase(dataTest.getNameMapper().getMv_cinName()))).
+			assertThat().body("queryParamater.tvChannel", anyOf( is(nullValue()) , equalToIgnoringCase(dataTest.getNameMapper().getTv_channel()))).
+			assertThat().body("queryParamater.tvProTitle", anyOf( is(nullValue()) , equalToIgnoringCase(dataTest.getNameMapper().getTv_program()))).
+			assertThat().body("queryParamater.movieTitle", anyOf( is(nullValue()) , equalToIgnoringCase(dataTest.getNameMapper().getMv_movieTitle())));
 	
 		}
 		
