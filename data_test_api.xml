@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <datatest>
 	
-	<data id="1">
+	<!--<data id="1">
 		<question>vtv1 đang chiếu gì</question>
 		<domain>tv</domain>
 		<intent>tv_ttl</intent>
@@ -15,12 +15,7 @@
 		<tvprogram>ai là triệu phú</tvprogram>
 		<cinname>tt chiếu phim quốc gia</cinname>
 	</data>
-	<data id="3">
-		<question>phim Lucy có hay không</question>
-		<domain>movie</domain>
-		<intent>mov_imdbrating</intent>
-		<movietitle>Lucy</movietitle>
-	</data>
+
 	<data id="4">
 		<question>rạp quốc gia chiếu gone girl lúc mấy giờ</question>
 		<domain>movie</domain>
@@ -52,11 +47,8 @@
 		<intent>mov_date</intent>
 		<cinname>platinum garden mall</cinname>
 	</data>
-	<data id="9">
-		<question>hôm nay ngoài rạp có phim kinh dị gì</question>
-		<domain>movie</domain>
-		<intent>mov_title</intent>
-	</data>
+
+
 	<data id="10">
 		<question>ai là đạo diễn phim cô gái mất tích</question>
 		<domain>movie</domain>
@@ -75,6 +67,7 @@
 		<question>bóng đá chiếu trên kênh nào?</question>
 		<domain>tv</domain>
 		<intent>tv_chn</intent>
+		<channel>vtv3</channel>
 		<types>{ FOOTBALL}</types>
 		<tvprogram>bóng đá</tvprogram>
 	</data>
@@ -82,6 +75,7 @@
 		<question>tối nay trên vtv3 chiếu phim hoạt hình không?</question>
 		<domain>tv</domain>
 		<intent>tv_pol</intent>
+		<channel>vtv3</channel>
 		<types>{ CARTOON}</types>
 		<tvprogram>phim hoạt hình</tvprogram>
 	</data>
@@ -89,30 +83,19 @@
 		<question>chương trình thể thao trên vtv3 chiếu lúc mấy giờ?</question>
 		<domain>tv</domain>
 		<intent>tv_dat</intent>
+		<channel>vtv3</channel>
 		<types>{ SPORT,FOOTBALL,GOLF,TENNIS}</types>
 		<tvprogram>thể thao</tvprogram>
-	</data>
-	<data id="15">
-		<question>phim bánh đúc có xương chiếu trên kênh nào?</question>
-		<domain>tv</domain>
-		<intent>tv_chn</intent>
-		<types>{ }</types>
-		<tvprogram>bánh đúc có xương</tvprogram>
-	</data>
+	</data>-->
+
 	<data id="16">
-		<question></question>
+		<question>hôm nay kênh nào chiếu bóng đá</question>
 		<domain>tv</domain>
 		<intent>tv_chn</intent>
 		<types>{ FOOTBALL}</types>
 		<tvprogram>bóng đá</tvprogram>
 	</data>
-	<data id="17">
-		<question>c1 chiếu lúc mấy giờ tối nay?</question>
-		<domain>tv</domain>
-		<intent>tv_ttl</intent>
-		<types>{ FOOTBALL}</types>
-		<tvprogram></tvprogram>
-	</data>
+
 	<data id="18">
 		<question>vtv1 đang chiếu gì?</question>
 		<domain>tv</domain>
@@ -158,4 +141,31 @@
 		<intent>mov_year</intent>
 		<movietitle>gone girl</movietitle>
 	</data>
+	<!--
+	<data id="17">
+		<question>c1 chiếu lúc mấy giờ tối nay?</question>
+		<domain>tv</domain>
+		<intent>tv_dat</intent>
+		<types>{ FOOTBALL}</types>
+		<tvprogram></tvprogram>
+	</data>
+	<data id="3">
+		<question>phim Lucy có hay không</question>
+		<domain>movie</domain>
+		<intent>mov_imdbrating</intent>
+		<movietitle>Lucy</movietitle>
+	</data>
+	<data id="9">
+		<question>hôm nay ngoài rạp có phim kinh dị gì</question>
+		<domain>movie</domain>
+		<intent>mov_title</intent>
+	</data>
+	<data id="15">
+		<question>phim bánh đúc có xương chiếu trên kênh nào?</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ }</types>
+		<tvprogram>bánh đúc có xương</tvprogram>
+	</data>
+	-->
 </datatest>

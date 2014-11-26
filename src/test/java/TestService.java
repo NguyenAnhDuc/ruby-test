@@ -14,10 +14,15 @@ public class TestService {
 		List<DataTest> datatests = Helper.readXmlFile("data_test_api.xml");
 		for (DataTest dataTest : datatests){
 			System.out.println("Test data " + dataTest.getId() + ": " + dataTest.getQuestion());
+			System.out.println("	Domain: " + dataTest.getDomain() + " | Intent: " + dataTest.getIntent());
+			if (!dataTest.getNameMapper().getMv_cinName().isEmpty()) System.out.println("Movie_CinName: " +dataTest.getNameMapper().getMv_cinName() );
+			if (!dataTest.getNameMapper().getMv_movieTitle().isEmpty()) System.out.println("Movie_MovieTitle: " +dataTest.getNameMapper().getMv_movieTitle() );
+			if (!dataTest.getNameMapper().getTv_channel().isEmpty()) System.out.println("TV_Channel: " +dataTest.getNameMapper().getTv_channel() );
+			if (!dataTest.getNameMapper().getTv_program().isEmpty()) System.out.println("TV_Program: " +dataTest.getNameMapper().getTv_program() );
 			given().contentType("application/x-www-form-urlencoded;charset=UTF-8").
 			param("question", dataTest.getQuestion()).
 		when().
-			post("http://localhost:8080/rubyweb/getAnswer").
+			post("http://ruby.fti.pagekite.me/rubyweb/getAnswer").
 		then().
 			assertThat().body("domain", equalTo(dataTest.getDomain())).
 			assertThat().body("intent", equalTo(dataTest.getIntent())).
