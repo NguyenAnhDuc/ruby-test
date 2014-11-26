@@ -6,6 +6,9 @@ public class DataTest {
 	private String intent;
 	private String answer;
 	private NameMapper nameMapper;
+	public DataTest(){
+		nameMapper = new NameMapper();
+	}
 	public NameMapper getNameMapper() {
 		return nameMapper;
 	}

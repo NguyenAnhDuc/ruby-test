@@ -57,6 +57,10 @@ public class Helper {
 	}
 	
 	public static void main(String[] args){
-		readXmlFile("data_test_api.xml");
+		//readXmlFile("data_test_api.xml");
+		List<String> tvs = new ArrayList<String>();
+		tvs.add("hello");
+		tvs.add("hi");
+		System.out.println(tvs.toString());
 	}
 }

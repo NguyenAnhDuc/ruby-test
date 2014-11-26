@@ -1,16 +1,161 @@
 <?xml version="1.0"?>
 <datatest>
+	
 	<data id="1">
 		<question>vtv1 đang chiếu gì</question>
 		<domain>tv</domain>
 		<intent>tv_ttl</intent>
 		<channel>vtv1</channel>
 	</data>
+	
 	<data id="2">
+		<question>kênh nào chiếu ai là triệu phú</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<tvprogram>ai là triệu phú</tvprogram>
+		<cinname>tt chiếu phim quốc gia</cinname>
+	</data>
+	<data id="3">
+		<question>phim Lucy có hay không</question>
+		<domain>movie</domain>
+		<intent>mov_imdbrating</intent>
+		<movietitle>Lucy</movietitle>
+	</data>
+	<data id="4">
+		<question>rạp quốc gia chiếu gone girl lúc mấy giờ</question>
+		<domain>movie</domain>
+		<intent>mov_date</intent>
+		<movietitle>gone girl</movietitle>
+		<cinname>tt chiếu phim quốc gia</cinname>
+	</data>
+	<data id="5">
 		<question>hôm nay rạp quốc gia chiếu phim gì</question>
 		<domain>movie</domain>
 		<intent>mov_title</intent>
-		<cinname>TT Chiếu Phim Quốc Gia</cinname>
-		
+		<cinname>tt chiếu phim quốc gia</cinname>
+	</data>
+	<data id="6">
+		<question>hôm nay vtv1 chiếu gì</question>
+		<domain>tv</domain>
+		<intent>tv_cal</intent>
+		<channel>vtv1</channel>
+	</data>
+	<data id="7">
+		<question>tối nay rạp nào chiếu phim gone girl</question>
+		<domain>movie</domain>
+		<intent>cin_name</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="8">
+		<question>lịch chiếu phim tối nay tại rạp garden thế nào</question>
+		<domain>movie</domain>
+		<intent>mov_date</intent>
+		<cinname>platinum garden mall</cinname>
+	</data>
+	<data id="9">
+		<question>hôm nay ngoài rạp có phim kinh dị gì</question>
+		<domain>movie</domain>
+		<intent>mov_title</intent>
+	</data>
+	<data id="10">
+		<question>ai là đạo diễn phim cô gái mất tích</question>
+		<domain>movie</domain>
+		<intent>mov_director</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="11">
+		<question>hôm nay có phim gì trên vtv1</question>
+		<domain>tv</domain>
+		<intent>tv_ttl</intent>
+		<channel>vtv1</channel>
+		<types>{ FILM}</types>
+		<tvprogram>Phim</tvprogram>
+	</data>
+	<data id="12">
+		<question>bóng đá chiếu trên kênh nào?</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ FOOTBALL}</types>
+		<tvprogram>bóng đá</tvprogram>
+	</data>
+	<data id="13">
+		<question>tối nay trên vtv3 chiếu phim hoạt hình không?</question>
+		<domain>tv</domain>
+		<intent>tv_pol</intent>
+		<types>{ CARTOON}</types>
+		<tvprogram>phim hoạt hình</tvprogram>
+	</data>
+	<data id="14">
+		<question>chương trình thể thao trên vtv3 chiếu lúc mấy giờ?</question>
+		<domain>tv</domain>
+		<intent>tv_dat</intent>
+		<types>{ SPORT,FOOTBALL,GOLF,TENNIS}</types>
+		<tvprogram>thể thao</tvprogram>
+	</data>
+	<data id="15">
+		<question>phim bánh đúc có xương chiếu trên kênh nào?</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ }</types>
+		<tvprogram>bánh đúc có xương</tvprogram>
+	</data>
+	<data id="16">
+		<question></question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ FOOTBALL}</types>
+		<tvprogram>bóng đá</tvprogram>
+	</data>
+	<data id="17">
+		<question>c1 chiếu lúc mấy giờ tối nay?</question>
+		<domain>tv</domain>
+		<intent>tv_ttl</intent>
+		<types>{ FOOTBALL}</types>
+		<tvprogram></tvprogram>
+	</data>
+	<data id="18">
+		<question>vtv1 đang chiếu gì?</question>
+		<domain>tv</domain>
+		<intent>tv_ttl</intent>
+		<channel>vtv1</channel>
+		<types>{ }</types>
+		<tvprogram></tvprogram>
+	</data>
+	<data id="19">
+		<question>tối nay kênh nào chiếu tennis?</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ TENNIS}</types>
+		<tvprogram></tvprogram>
+	</data>
+	<data id="20">
+		<question>phim gone girl thuộc thể loại gì</question>
+		<domain>movie</domain>
+		<intent>mov_genre</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="21">
+		<question>phim gone girl có diễn viên nào</question>
+		<domain>movie</domain>
+		<intent>mov_actor</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="22">
+		<question>phim gone girl có diễn viên nào</question>
+		<domain>movie</domain>
+		<intent>mov_audience</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="23">
+		<question>phim gone girl là phim của nước nào</question>
+		<domain>movie</domain>
+		<intent>mov_country</intent>
+		<movietitle>gone girl</movietitle>
+	</data>
+	<data id="24">
+		<question>phim gone girl sản xuất năm bao nhiêu</question>
+		<domain>movie</domain>
+		<intent>mov_year</intent>
+		<movietitle>gone girl</movietitle>
 	</data>
 </datatest>
