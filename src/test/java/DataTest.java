@@ -8,6 +8,7 @@ public class DataTest {
 	private NameMapper nameMapper;
 	public DataTest(){
 		nameMapper = new NameMapper();
+		intent = null;
 	}
 	public NameMapper getNameMapper() {
 		return nameMapper;

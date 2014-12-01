@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <datatest>
 	
-	<!--<data id="1">
+	<data id="1">
 		<question>vtv1 đang chiếu gì</question>
 		<domain>tv</domain>
 		<intent>tv_ttl</intent>
@@ -86,7 +86,7 @@
 		<channel>vtv3</channel>
 		<types>{ SPORT,FOOTBALL,GOLF,TENNIS}</types>
 		<tvprogram>thể thao</tvprogram>
-	</data>-->
+	</data>
 
 	<data id="16">
 		<question>hôm nay kênh nào chiếu bóng đá</question>
@@ -107,7 +107,7 @@
 	<data id="19">
 		<question>tối nay kênh nào chiếu tennis?</question>
 		<domain>tv</domain>
-		<intent>tv_chn</intent>
+		<intent>tv</intent>
 		<types>{ TENNIS}</types>
 		<tvprogram></tvprogram>
 	</data>
@@ -124,7 +124,7 @@
 		<movietitle>gone girl</movietitle>
 	</data>
 	<data id="22">
-		<question>phim gone girl có diễn viên nào</question>
+		<question>phim gone girl có dành cho trẻ em không</question>
 		<domain>movie</domain>
 		<intent>mov_audience</intent>
 		<movietitle>gone girl</movietitle>

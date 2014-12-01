@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<datatest>
+	
+
+
+	<data id="17">
+		<question>c1 chiếu lúc mấy giờ tối nay?</question>
+		<domain>tv</domain>
+		<intent>tv_dat</intent>
+		<types>{ FOOTBALL}</types>
+		<tvprogram></tvprogram>
+	</data>
+	<data id="3">
+		<question>phim Lucy có hay không</question>
+		<domain>movie</domain>
+		<intent>mov_imdbrating</intent>
+		<movietitle>Lucy</movietitle>
+	</data>
+	<data id="9">
+		<question>hôm nay ngoài rạp có phim kinh dị gì</question>
+		<domain>movie</domain>
+		<intent>mov_title</intent>
+	</data>
+	<data id="15">
+		<question>phim bánh đúc có xương chiếu trên kênh nào?</question>
+		<domain>tv</domain>
+		<intent>tv_chn</intent>
+		<types>{ }</types>
+		<tvprogram>bánh đúc có xương</tvprogram>
+	</data>
+</datatest>

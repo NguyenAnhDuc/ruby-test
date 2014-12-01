@@ -1,14 +1,13 @@
-import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Helper {
@@ -37,7 +36,7 @@ public class Helper {
 						dataTest.setId( Integer.parseInt(eElement.getAttribute("id")));
 						dataTest.setQuestion( eElement.getElementsByTagName("question").item(0).getTextContent());
 						dataTest.setDomain( eElement.getElementsByTagName("domain").item(0).getTextContent());
-						dataTest.setIntent( eElement.getElementsByTagName("intent").item(0).getTextContent());
+						if (eElement.getElementsByTagName("intent").getLength() > 0) dataTest.setIntent( eElement.getElementsByTagName("intent").item(0).getTextContent());
 						if (eElement.getElementsByTagName("cinname").getLength() > 0)
 							nameMapper.setMv_cinName(eElement.getElementsByTagName("cinname").item(0).getTextContent());
 						if (eElement.getElementsByTagName("channel").getLength() > 0)
@@ -57,7 +56,7 @@ public class Helper {
 	}
 	
 	public static void main(String[] args){
-		//readXmlFile("data_test_api.xml");
+		//readXmlFile("data_test_api_1.xml");
 		List<String> tvs = new ArrayList<String>();
 		tvs.add("hello");
 		tvs.add("hi");
